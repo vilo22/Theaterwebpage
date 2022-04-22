@@ -1,0 +1,138 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr .5fr 2fr 2fr 2fr 2fr 5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "name links links links"
+        "picture picture picture picture"
+        ". box box ."
+        ". content1 content1 ."
+        ". content2 content2 ."
+        ". content3 content3 ."
+        ". content4 content4 ."
+        "map map social social";
+}
+
+.picture {
+    grid-area: picture;
+}
+.box{
+    grid-area: box;
+    border:solid 1px;
+    border-width: 1px;
+    border-color: rgb(181, 181, 181);
+    background-color: rgb(244, 244, 244);
+    height: 30px;
+    display: flex;
+    align-self: flex-end;
+}
+.text1{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.map {
+    grid-area: map;
+    background-color: black;
+}
+
+.social {
+    grid-area: social;
+    background-color: black;
+}
+
+.content1 {
+    grid-area: content1;
+
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.content4 {
+    grid-area: content4;
+}
+
+.name {
+    grid-area: name;
+    background-color: black;
+}
+
+.links {
+    grid-area: links;
+    background-color: black;
+}
+
+
+.image2 {
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+#title{
+    position:absolute;
+    top: 50%;
+    left:80%;
+    transform: translate(-50%, -50%)
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.nav {
+    grid-area: links;
+    display: inline;
+    margin: 20px;
+    margin: 10;
+    width: 75%;
+    display: inline-flex;
+    justify-content: space-around;
+    
+}
+
+.nav a{
+    color:rgb(255, 255, 255);
+}
+
+.image2{
+    padding-top: 40px;
+    max-width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    margin-right:100px
+}
+
+.info{
+    grid-area: content1;
+    padding: 20px;
+    padding-left: 30px;
+
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -70px;
+    height: 70px;
+    
+}
+
+.borderline{
+    border-bottom: 1px solid rgb(97, 97, 97);
+    height: 100px
+}
+
